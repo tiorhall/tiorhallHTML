@@ -1,12 +1,7 @@
 - 👋 Hi, I’m @tiorhall 
 - 👀 I’m interested in games, psychology, science, technology, art, culture, educacion, digital fabrication, maker school, music and design. 
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-tiorhall/tiorhall is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- 🌱 I’m currently learning IA for developers, Phyton, HTML 5, CSS, JS, Git and GitHub.
+- 💞️ I’m looking to collaborate on projects didactics for educacion.
+- 📫 How to reach me? https://www.linkedin.com/in/rhaldneylima/
+- 😄 Pronouns: He/Him and She/Her.
+- ⚡ Fun fact: I like sleep and dance.
