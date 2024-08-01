@@ -1,0 +1,50 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <img src="https://pbs.twimg.com/media/GN_NCWRXcAE1eGD?format=jpg&name=large">
+<h1>Rhaldney Lima</h1>
+<h2>Psicologo, Professor de TI e alguém
+ curioso por natureza.</h2>
+<p>Seja bem-vindo as ramicações do meu
+ universo!</p>
+  <a href="https://www.instagram.com/rhalldney/"
+   target="_blank">INSTAGRAM</a>
+  <a href="https://www.linkedin.com/in/rhaldneylima/"target="_blank">LINKEDIN</a>
+  <a href="https://github.com/tiorhall/"
+   target="_blank">GITHUB</a>
+ </body>
+</html>
+
+
+-------------- CSS ----------------
+
+img {
+ border: solid 5px white;
+ border-radius: 100px;
+ width: 150px;
+ height: 150px;
+}
+h2 {
+ font-size: 18px;
+}
+body {
+background: rgb(135,129,236);
+background: linear-gradient(192deg, rgba(135,129,236,1) 11%, rgba(9,9,121,1) 49%, rgba(0,116,139,1) 100%);
+ font-family: Helvetica;
+ color: white;
+ text-align: center;
+}
+a {
+ background-color: white;
+ font-size: 15px;
+ border-radius: 40px;
+ padding: 10px;
+ margin: 10px;
+ display: block; 
+ text-align: center;
+ color: #8781ec;
+ font-weight: bold;
+ text-decoration: none;
+}
