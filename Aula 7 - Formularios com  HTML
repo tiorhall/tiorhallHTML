@@ -99,7 +99,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #45a049;
+  background-color: #todo;
 }
 
 .social-login {
@@ -119,19 +119,19 @@ form button:hover {
 }
 
 .social-login .google {
-  background-color: #db4a39;
-  color: white;
+  background-color: #todo;
+  color: #todo;
 }
 
 .social-login .facebook {
-  background-color: #3b5998;
-  color: white;
+  background-color: #todo;
+  color: #todo;
 }
 
 .social-login .google:hover {
-  background-color: #c0392b;
+  background-color: #todo;
 }
 
 .social-login .facebook:hover {
-  background-color: #2d4373;
+  background-color: #todo;
 }
