@@ -1,0 +1,145 @@
+----------------HTML-----------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feed de Rede Social</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Seção do perfil -->
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="profile.jpg" alt="Foto do perfil">
+            </div>
+            <div class="profile-info">
+                <h2>Nome do Usuário</h2>
+                <p class="bio">Aqui vai a biografia do usuário. Pode ser uma frase curta ou descrição pessoal.</p>
+            </div>
+        </div>
+
+        <!-- Feed de Imagens -->
+        <div class="feed-section">
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="image1.jpg" alt="Imagem 1">
+                </div>
+                <div class="image-item">
+                    <img src="image2.jpg" alt="Imagem 2">
+                </div>
+                <div class="image-item">
+                    <img src="image3.jpg" alt="Imagem 3">
+                </div>
+                <div class="image-item">
+                    <img src="image4.jpg" alt="Imagem 4">
+                </div>
+                <div class="image-item">
+                    <img src="image5.jpg" alt="Imagem 5">
+                </div>
+                <div class="image-item">
+                    <img src="image6.jpg" alt="Imagem 6">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+-------------------CSS-----------------------
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.1);
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-info .bio {
+    font-size: 16px;
+    color: #666;
+}
+
+.feed-section {
+    display: flex;
+    justify-content: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image-item {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+}
