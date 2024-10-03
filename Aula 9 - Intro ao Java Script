@@ -1,0 +1,168 @@
+------------- HTML ---------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Introdução ao JavaScript</h1>
+        <nav>
+            <a href="#intro">O que é JavaScript?</a>
+            <a href="#tags">Tags e Sintaxe Básica</a>
+            <a href="#exemplos">Exemplos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+   <section id="intro">
+    <h2>O que é JavaScript?</h2>
+    <p>JavaScript é uma linguagem de programação que permite adicionar interatividade e comportamento dinâmico às páginas web. Ela é usada em milhões de sites para criar menus interativos, atualizar conteúdos automaticamente, criar animações, validar formulários, e muito mais.</p>
+    <p>Quando um usuário interage com um site (como clicar em botões, preencher formulários ou rolar a página), o JavaScript pode reagir a essas ações, tornando a experiência mais rica e interativa.</p>
+    <h3>Exemplo de Uso</h3>
+    <p>Clique no botão abaixo para ver um exemplo simples de como o JavaScript pode alterar o conteúdo de uma página em tempo real:</p>
+    <button onclick="alterarTexto()">Clique Aqui!</button>
+    <p id="mensagem">Este texto será alterado quando você clicar no botão.</p>
+    <script>
+        function alterarTexto() {
+            document.getElementById("mensagem").textContent = "Você clicou no botão e o JavaScript alterou este texto!";
+        }
+    </script>
+</section>
+  
+  <section id="tags">
+    <h2>Tags e Sintaxe Básica</h2>
+    <p>A tag <code>&lt;script&gt;</code> é usada para incluir código JavaScript dentro de uma página HTML. Esse código pode ser inserido diretamente no arquivo HTML ou referenciado a partir de um arquivo externo (como o arquivo script.js).</p>
+    
+    <h3>Outras Funcionalidades Básicas</h3>
+
+    <p><b>Declaração de Variáveis:</b></p>
+    <pre><code>let mensagem = "Olá, JavaScript!";</code></pre>
+    <p>Essa linha cria uma variável chamada <code>mensagem</code> e atribui a ela o valor "Olá, JavaScript!".</p>
+
+    <p><b>Funções:</b></p>
+    <pre><code>function exibirMensagem() {
+    alert(mensagem);
+}</code></pre>
+    <p>Funções são blocos de código que podem ser chamados para realizar uma tarefa. Neste exemplo, a função <code>exibirMensagem()</code> exibe a mensagem armazenada na variável <code>mensagem</code> em uma caixa de alerta.</p>
+
+    <p><b>Eventos:</b></p>
+    <p>Eventos são ações que podem acontecer em uma página, como o clique em um botão, e o JavaScript pode reagir a esses eventos. Veja como adicionar um evento de clique a um botão:</p>
+    <pre><code>&lt;button onclick="exibirMensagem()"&gt;Clique-me&lt;/button&gt;</code></pre>
+    <p>Quando o botão é clicado, a função <code>exibirMensagem()</code> é chamada, exibindo a mensagem.</p>
+
+    <h3>Exemplo Completo:</h3>
+    <p>Tente clicar no botão abaixo:</p>
+    <button onclick="exibirMensagem()">Clique-me</button>
+
+    <script>
+        let mensagem = "Olá, JavaScript!";
+        function exibirMensagem() {
+            alert(mensagem);
+        }
+    </script>
+</section>
+  <section id="exemplos">
+        <h2>Exemplos</h2>
+        <button onclick="mostrarAlerta()">Clique para ver um exemplo</button>
+        <script>
+            function mostrarAlerta() {
+                alert("Este é um exemplo de alerta em JavaScript!");
+            }
+        </script>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
+--------------------- CSS -----------------------
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #f4f4f4;
+
+}
+
+header {
+
+    background-color: #333;
+
+    color: white;
+
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+nav a {
+
+    color: white;
+
+    padding: 10px;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+}
+
+section {
+
+    margin: 20px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 10px;
+
+    background-color: #333;
+
+    color: white;
+
+    position: fixed;
+
+    width: 100%;
+
+    bottom: 0;
+
+}
+
+------------------------- JS ---------------------------------
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    alert("Formulário enviado com sucesso!");
+
+});
